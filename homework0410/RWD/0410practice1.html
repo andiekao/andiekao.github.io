@@ -11,75 +11,9 @@
     <meta name="description" content="description">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style/rwd.css">
     <title>title</title>
     <style type="text/css">
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    [class*="col-"] {
-        float: left;
-    }
-    
-    .col-md-1 {
-        width: calc(100%/12);
-    }
-    
-    .col-md-2 {
-        width: calc(100%*2/12);
-    }
-    
-    .col-md-3 {
-        width: calc(100%*3/12);
-    }
-    
-    .col-md-4 {
-        width: calc(100%*4/12);
-    }
-    
-    .col-md-5 {
-        width: calc(100%*5/12);
-    }
-    
-    .col-md-6 {
-        width: calc(100%*6/12);
-    }
-    
-    .col-md-7 {
-        width: calc(100%*7/12);
-    }
-    
-    .col-md-8 {
-        width: calc(100%*8/12);
-    }
-    
-    .col-md-9 {
-        width: calc(100%*9/12);
-    }
-    
-    .col-md-10 {
-        width: calc(100%*10/12);
-    }
-    
-    .col-md-11 {
-        width: calc(100%*11/12);
-    }
-    
-    .col-md-12 {
-        width: calc(100%);
-    }
-    
-    .row:after {
-        content: "";
-        clear: both;
-        display: block;
-    }
-    
     .header {
         background-color: #131325;
         color: #FFFFFF;
@@ -164,11 +98,20 @@
         max-width: 60%;
         padding: 30px;
         padding-top: 80px;
+        border-bottom: 0.5px #E0E0E0 solid;
     }
     
     .precision .container .title img {
         max-width: 60px;
         height: auto;
+    }
+    
+    .info {
+        margin-top: 80px;
+    }
+    
+    .info .rightside {
+        overflow: hidden;
     }
     
     .info .leftside {
@@ -177,6 +120,34 @@
         margin: 0 auto;
         margin-top: 30%;
         margin-left: 130px;
+        padding-right: 60px;
+    }
+    
+    .box {
+        width: 100%;
+        margin: 0 auto;
+        border-top: 0.5px #E0E0E0 solid;
+    }
+    
+    table {
+        padding: 80px 100px;
+        margin: 10px;
+    }
+    
+    .box table tr {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .box table tr td {
+        text-align: left;
+        margin-left: 50px;
+    }
+    
+    .box table img {
+        max-width: 25%;
+        height: auto;
     }
     </style>
 </head>
@@ -242,6 +213,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    <div class="info">
         <div class="precision">
             <div class="container">
                 <div class="row">
@@ -252,27 +226,46 @@
                             <p>Vectors mean scalability. Sketch’s Vector shapes easily adapt to changing styles, sizes and layouts, allowing you to avoid a lot of painful hand-tweaking. Sometimes though, you still need to account for physical pixels. Sketch supports this, meaning that you can fine tune when you need to.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="info">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="leftside">
-                            <h1>Objects.</h1>
-                            <p>In Sketch, every shape you create is an item in the Layers List. No more hidden paths.</br>
-                                </br>
-                                With our flexible boolean operations, you can combine paths to create complex shapes, while all the parts stay 100% editable.</br>
-                                </br>
-                                Working on a large document? Name and group layers to keep things organized, then search by name when you need to find something.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="leftside">
+                                <h1>Objects.</h1>
+                                <p>In Sketch, every shape you create is an item in the Layers List. No more hidden paths.</br>
+                                    </br>
+                                    With our flexible boolean operations, you can combine paths to create complex shapes, while all the parts stay 100% editable.</br>
+                                    </br>
+                                    Working on a large document? Name and group layers to keep things organized, then search by name when you need to find something.</p>
+                            </div>
+                        </div>
+                        <div class="rightside">
+                            <div class="col-md-6"><img src="img/precision-objects.jpg"></div>
                         </div>
                     </div>
-                    <div class="rightside">
-                        <div class="col-md-6"><img src="img/precision-objects.jpg"></div>
+                </div>
+                <div class="box">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table width="100%" cellpadding="18px">
+                                <tr>
+                                    <td><img src="img/img-2-01.png" alt="">
+                                        <h2>Snap to Pixel.</h2>
+                                        <p>Sketch rounds a shape or layer to its nearest pixel edge. No more half pixels, dirty shapes and alpha-blended messes.</p>
+                                    </td>
+                                    <td><img src="img/img-2-03.png" alt="">
+                                        <h2>Pixel Zoom.</h2>
+                                        <p>See everything in the fullest detail, or turn on Pixel View to inspect the resulting pixels. It’s the best of both worlds.</p>
+                                    </td>
+                                    <td><img src="img/img-2-02.png" alt="">
+                                        <h2>Beautiful Text.</h2>
+                                        <p>Sketch’s perfect native text rendering shows your text exactly as it will appear in your app or on your website.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
